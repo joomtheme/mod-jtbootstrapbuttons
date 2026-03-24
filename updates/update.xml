@@ -11,6 +11,7 @@
             <downloadurl type="full" format="zip">https://github.com/joomtheme/mod-jtbootstrapbuttons/releases/download/v1.0.3/mod_jtbootstrapbuttons_v1.0.3.zip</downloadurl>
         </downloads>
         <infourl title="JoomTheme Bootstrap Buttons Module v1.0.3">https://github.com/joomtheme/mod-jtbootstrapbuttons/releases/tag/v1.0.3</infourl>
+        <sha256>8c0a84d147f414bbb32717df1d8faec377b0621d24d3b6f2c042f787fb9d8c40</sha256>
         <targetplatform name="joomla" version="((5\..*)|(6\..*))" />
     </update>
 </updates>
