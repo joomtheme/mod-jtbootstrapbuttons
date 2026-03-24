@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>MOD_JTBOOTSTRAPBUTTONS</name>
+    <author>JoomTheme</author>
+    <authorEmail>support@joomtheme.com</authorEmail>
+    <authorUrl>https://joomtheme.com</authorUrl>
+    <copyright>(C) 2026 JoomTheme</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0.2</version>
+    <creationDate>2026-03-23</creationDate>
+    <description><![CDATA[MOD_JTBOOTSTRAPBUTTONS_XML_DESCRIPTION]]></description>
+    <namespace path="src">JoomTheme\Module\BootstrapButtons</namespace>
+
+    <files>
+        <folder module="mod_jtbootstrapbuttons">services</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+        <folder>forms</folder>
+        <folder>language</folder>
+        <filename>LICENSE.txt</filename>
+        <filename>README.md</filename>
+        <filename>mod_jtbootstrapbuttons.xml</filename>
+    </files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/mod_jtbootstrapbuttons.ini</language>
+        <language tag="en-GB">language/en-GB/mod_jtbootstrapbuttons.sys.ini</language>
+        <language tag="tr-TR">language/tr-TR/mod_jtbootstrapbuttons.ini</language>
+        <language tag="tr-TR">language/tr-TR/mod_jtbootstrapbuttons.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="buttons"
+                    type="subform"
+                    formsource="modules/mod_jtbootstrapbuttons/forms/button.xml"
+                    label="MOD_JTBOOTSTRAPBUTTONS_FIELD_BUTTONS_LABEL"
+                    description="MOD_JTBOOTSTRAPBUTTONS_FIELD_BUTTONS_DESC"
+                    multiple="true"
+                    min="1"
+                    max="20"
+                    buttons="add,remove,move"
+                    layout="joomla.form.field.subform.repeatable"
+                    groupByFieldset="true"
+                    validate="Subform"
+                />
+
+                <field
+                    name="alignment"
+                    type="list"
+                    default="start"
+                    label="MOD_JTBOOTSTRAPBUTTONS_FIELD_ALIGNMENT_LABEL"
+                    description="MOD_JTBOOTSTRAPBUTTONS_FIELD_ALIGNMENT_DESC"
+                >
+                    <option value="start">MOD_JTBOOTSTRAPBUTTONS_OPTION_ALIGN_START</option>
+                    <option value="center">MOD_JTBOOTSTRAPBUTTONS_OPTION_ALIGN_CENTER</option>
+                    <option value="end">MOD_JTBOOTSTRAPBUTTONS_OPTION_ALIGN_END</option>
+                </field>
+
+                <field
+                    name="gap"
+                    type="list"
+                    default="2"
+                    label="MOD_JTBOOTSTRAPBUTTONS_FIELD_GAP_LABEL"
+                    description="MOD_JTBOOTSTRAPBUTTONS_FIELD_GAP_DESC"
+                >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </field>
+            </fieldset>
+
+            <fieldset name="support" label="MOD_JTBOOTSTRAPBUTTONS_SUPPORT_FIELDSET_LABEL">
+                <field
+                    name="support_info"
+                    type="note"
+                    label=""
+                    class="alert alert-info"
+                    description="MOD_JTBOOTSTRAPBUTTONS_SUPPORT_NOTE"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
