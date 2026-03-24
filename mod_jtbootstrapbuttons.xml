@@ -6,8 +6,8 @@
     <authorUrl>https://joomtheme.com</authorUrl>
     <copyright>(C) 2026 JoomTheme</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-    <version>1.0.2</version>
-    <creationDate>2026-03-23</creationDate>
+    <version>1.0.3</version>
+    <creationDate>2026-03-24</creationDate>
     <description><![CDATA[MOD_JTBOOTSTRAPBUTTONS_XML_DESCRIPTION]]></description>
     <namespace path="src">JoomTheme\Module\BootstrapButtons</namespace>
 
@@ -86,4 +86,8 @@
             </fieldset>
         </fields>
     </config>
+
+    <updateservers>
+        <server type="extension" name="JoomTheme Bootstrap Buttons Module Updates">https://raw.githubusercontent.com/joomtheme/mod-jtbootstrapbuttons/main/updates/update.xml</server>
+    </updateservers>
 </extension>
