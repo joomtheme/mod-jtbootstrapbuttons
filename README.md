@@ -26,5 +26,5 @@ A Joomla 6 compatible site module for rendering one or more Bootstrap 5 buttons 
 - Author: JoomTheme
 - Email: support@joomtheme.com
 - Website: https://joomtheme.com
-- Version: 1.0.2
+- Version: 1.0.3
 - License: GNU General Public License version 2 or later
