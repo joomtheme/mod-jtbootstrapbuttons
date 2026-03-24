@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="button">
+        <field
+            name="text"
+            type="text"
+            required="true"
+            filter="string"
+            maxlength="255"
+            hint="MOD_JTBOOTSTRAPBUTTONS_FIELD_TEXT_HINT"
+            label="MOD_JTBOOTSTRAPBUTTONS_FIELD_TEXT_LABEL"
+            description="MOD_JTBOOTSTRAPBUTTONS_FIELD_TEXT_DESC"
+        />
+
+        <field
+            name="url"
+            type="url"
+            filter="url"
+            validate="url"
+            relative="true"
+            maxlength="2048"
+            hint="MOD_JTBOOTSTRAPBUTTONS_FIELD_URL_HINT"
+            label="MOD_JTBOOTSTRAPBUTTONS_FIELD_URL_LABEL"
+            description="MOD_JTBOOTSTRAPBUTTONS_FIELD_URL_DESC"
+        />
+
+        <field
+            name="title"
+            type="text"
+            filter="string"
+            maxlength="255"
+            hint="MOD_JTBOOTSTRAPBUTTONS_FIELD_TITLE_HINT"
+            label="MOD_JTBOOTSTRAPBUTTONS_FIELD_TITLE_LABEL"
+            description="MOD_JTBOOTSTRAPBUTTONS_FIELD_TITLE_DESC"
+        />
+
+        <field
+            name="variant"
+            type="list"
+            default="primary"
+            label="MOD_JTBOOTSTRAPBUTTONS_FIELD_VARIANT_LABEL"
+            description="MOD_JTBOOTSTRAPBUTTONS_FIELD_VARIANT_DESC"
+        >
+            <option value="primary">MOD_JTBOOTSTRAPBUTTONS_OPTION_VARIANT_PRIMARY</option>
+            <option value="secondary">MOD_JTBOOTSTRAPBUTTONS_OPTION_VARIANT_SECONDARY</option>
+            <option value="success">MOD_JTBOOTSTRAPBUTTONS_OPTION_VARIANT_SUCCESS</option>
+            <option value="danger">MOD_JTBOOTSTRAPBUTTONS_OPTION_VARIANT_DANGER</option>
+            <option value="warning">MOD_JTBOOTSTRAPBUTTONS_OPTION_VARIANT_WARNING</option>
+            <option value="info">MOD_JTBOOTSTRAPBUTTONS_OPTION_VARIANT_INFO</option>
+            <option value="light">MOD_JTBOOTSTRAPBUTTONS_OPTION_VARIANT_LIGHT</option>
+            <option value="dark">MOD_JTBOOTSTRAPBUTTONS_OPTION_VARIANT_DARK</option>
+            <option value="link">MOD_JTBOOTSTRAPBUTTONS_OPTION_VARIANT_LINK</option>
+        </field>
+
+        <field
+            name="outline"
+            type="radio"
+            default="0"
+            class="btn-group btn-group-yesno"
+            label="MOD_JTBOOTSTRAPBUTTONS_FIELD_OUTLINE_LABEL"
+            description="MOD_JTBOOTSTRAPBUTTONS_FIELD_OUTLINE_DESC"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="size"
+            type="list"
+            default=""
+            label="MOD_JTBOOTSTRAPBUTTONS_FIELD_SIZE_LABEL"
+            description="MOD_JTBOOTSTRAPBUTTONS_FIELD_SIZE_DESC"
+        >
+            <option value="">MOD_JTBOOTSTRAPBUTTONS_OPTION_SIZE_DEFAULT</option>
+            <option value="sm">MOD_JTBOOTSTRAPBUTTONS_OPTION_SIZE_SMALL</option>
+            <option value="lg">MOD_JTBOOTSTRAPBUTTONS_OPTION_SIZE_LARGE</option>
+        </field>
+
+        <field
+            name="target"
+            type="list"
+            default=""
+            label="MOD_JTBOOTSTRAPBUTTONS_FIELD_TARGET_LABEL"
+            description="MOD_JTBOOTSTRAPBUTTONS_FIELD_TARGET_DESC"
+        >
+            <option value="">MOD_JTBOOTSTRAPBUTTONS_OPTION_TARGET_SELF</option>
+            <option value="_blank">MOD_JTBOOTSTRAPBUTTONS_OPTION_TARGET_BLANK</option>
+        </field>
+
+        <field
+            name="full_width"
+            type="radio"
+            default="0"
+            class="btn-group btn-group-yesno"
+            label="MOD_JTBOOTSTRAPBUTTONS_FIELD_FULLWIDTH_LABEL"
+            description="MOD_JTBOOTSTRAPBUTTONS_FIELD_FULLWIDTH_DESC"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="disabled"
+            type="radio"
+            default="0"
+            class="btn-group btn-group-yesno"
+            label="MOD_JTBOOTSTRAPBUTTONS_FIELD_DISABLED_LABEL"
+            description="MOD_JTBOOTSTRAPBUTTONS_FIELD_DISABLED_DESC"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+    </fieldset>
+</form>
