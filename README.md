@@ -1,3 +1,8 @@
+![Joomla 5/6](https://img.shields.io/badge/Joomla-5%2F6-5091CD?style=flat&logo=joomla)
+![Bootstrap 5](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat&logo=bootstrap)
+![License GPL-2.0%2B](https://img.shields.io/badge/License-GPL--2.0%2B-blue.svg?style=flat)
+![Latest Release](https://img.shields.io/github/v/release/joomtheme/mod-jtbootstrapbuttons?sort=semver&style=flat)
+
 # JT Bootstrap Buttons
 
 A Joomla 5 and 6 compatible site module for rendering one or more Bootstrap 5 buttons using Joomla core form fields and Bootstrap-compatible frontend classes.
