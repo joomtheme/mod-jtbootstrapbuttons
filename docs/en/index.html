@@ -1,1 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JT Bootstrap Buttons Demo</title>
+  <meta name="description" content="JT Bootstrap Buttons Joomla 5/6 module demo page showcasing all features.">
+  <link rel="canonical" href="https://joomtheme.github.io/mod-jtbootstrapbuttons/en/">
+  <link rel="alternate" hreflang="tr" href="https://joomtheme.github.io/mod-jtbootstrapbuttons/">
+  <link rel="alternate" hreflang="en" href="https://joomtheme.github.io/mod-jtbootstrapbuttons/en/">
+  <meta property="og:title" content="JT Bootstrap Buttons Demo">
+  <meta property="og:description" content="A Bootstrap 5 compatible button module demo page for Joomla 5/6.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joomtheme.github.io/mod-jtbootstrapbuttons/en/">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --jt-radius: 1rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(13, 110, 253, .12), transparent 28rem),
+        radial-gradient(circle at top right, rgba(111, 66, 193, .12), transparent 24rem),
+        #f8f9fa;
+    }
+
+    .navbar-blur {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, .86);
+      border-bottom: 1px solid rgba(0, 0, 0, .08);
+    }
+
+    .hero {
+      padding: 6rem 0 4rem;
+    }
+
+    .demo-section {
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, .08);
+      border-radius: var(--jt-radius);
+      box-shadow: 0 .75rem 2rem rgba(0, 0, 0, .04);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-card {
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, .08);
+      border-radius: var(--jt-radius);
+      padding: 1.25rem;
+      background: #fff;
+    }
+
+    .code-box {
+      background: #111827;
+      color: #f9fafb;
+      border-radius: .875rem;
+      padding: 1rem;
+      overflow-x: auto;
+      font-size: .875rem;
+    }
+
+    .mod-jtbootstrapbuttons {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .demo-label {
+      font-size: .875rem;
+      font-weight: 600;
+      color: #6c757d;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .anchor-target {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-blur">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top">JT Bootstrap Buttons</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demoNav" aria-controls="demoNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="demoNav">
+        <div class="navbar-nav ms-auto align-items-lg-center">
+          <a class="nav-link" href="#features">Features</a>
+          <a class="nav-link" href="#variants">Colors</a>
+          <a class="nav-link" href="#outline">Outline</a>
+          <a class="nav-link" href="#sizes">Sizes</a>
+          <a class="nav-link" href="#links">URL</a>
+          <a class="nav-link" href="#layout">Layout</a>
+          <a class="nav-link" href="#output">Output</a>
+          <a class="nav-link btn btn-sm btn-outline-primary ms-lg-2 px-3" href="../">Türkçe</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero text-center">
+      <div class="container">
+        <span class="badge text-bg-primary-subtle text-primary border border-primary-subtle mb-3">Joomla 5/6 • Bootstrap 5 • GPL-2.0+</span>
+        <h1 class="display-4 fw-bold mb-3">JT Bootstrap Buttons</h1>
+        <p class="lead text-secondary mx-auto" style="max-width: 760px;">
+          Create one or more Bootstrap 5 buttons with a Joomla site module. Configure colors, outline mode, sizes, target behavior, full width mode, disabled state, alignment and button spacing from the module settings.
+        </p>
+        <div class="d-flex justify-content-center gap-2 flex-wrap mt-4">
+          <a class="btn btn-primary btn-lg" href="https://github.com/joomtheme/mod-jtbootstrapbuttons" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <a class="btn btn-outline-primary btn-lg" href="https://github.com/joomtheme/mod-jtbootstrapbuttons/releases" target="_blank" rel="noopener noreferrer">Download</a>
+          <a class="btn btn-link btn-lg" href="#features">View Features</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container anchor-target">
+      <div class="demo-section">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <p class="demo-label mb-2">Module Features</p>
+            <h2 class="h1 fw-bold mb-3">All features in one module</h2>
+            <p class="text-secondary mb-0">
+              This demo page statically represents the Bootstrap 5 compatible HTML output generated by the Joomla module on the frontend.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-md-6"><div class="feature-card"><strong>Repeatable buttons</strong><br><span class="text-secondary">Add 1–20 buttons from the module form.</span></div></div>
+              <div class="col-md-6"><div class="feature-card"><strong>Bootstrap variants</strong><br><span class="text-secondary">Primary, secondary, success, danger, warning, info, light, dark and link.</span></div></div>
+              <div class="col-md-6"><div class="feature-card"><strong>Outline style</strong><br><span class="text-secondary">Outline buttons for every variant except link.</span></div></div>
+              <div class="col-md-6"><div class="feature-card"><strong>Sizes</strong><br><span class="text-secondary">Small, default and large button sizes.</span></div></div>
+              <div class="col-md-6"><div class="feature-card"><strong>Link behavior</strong><br><span class="text-secondary">Open links in the same window or in a new tab.</span></div></div>
+              <div class="col-md-6"><div class="feature-card"><strong>Accessibility</strong><br><span class="text-secondary">The title value is also used as an aria-label.</span></div></div>
+              <div class="col-md-6"><div class="feature-card"><strong>Layout</strong><br><span class="text-secondary">Left, center and right alignment with gap 0–5.</span></div></div>
+              <div class="col-md-6"><div class="feature-card"><strong>Safe URL handling</strong><br><span class="text-secondary">Supports http, https, relative URLs, anchors, mailto and tel links.</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="variants" class="container anchor-target">
+      <div class="demo-section">
+        <p class="demo-label mb-2">Color variants</p>
+        <h2 class="h3 fw-bold mb-3">Bootstrap 5 color variants</h2>
+        <div class="mod-jtbootstrapbuttons d-flex flex-wrap justify-content-start gap-2">
+          <a href="#" class="btn btn-primary">Primary</a>
+          <a href="#" class="btn btn-secondary">Secondary</a>
+          <a href="#" class="btn btn-success">Success</a>
+          <a href="#" class="btn btn-danger">Danger</a>
+          <a href="#" class="btn btn-warning">Warning</a>
+          <a href="#" class="btn btn-info">Info</a>
+          <a href="#" class="btn btn-light border">Light</a>
+          <a href="#" class="btn btn-dark">Dark</a>
+          <a href="#" class="btn btn-link">Link</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="outline" class="container anchor-target">
+      <div class="demo-section">
+        <p class="demo-label mb-2">Outline style</p>
+        <h2 class="h3 fw-bold mb-3">Outline buttons</h2>
+        <p class="text-secondary">The outline option can be used with all Bootstrap color variants except the link variant.</p>
+        <div class="mod-jtbootstrapbuttons d-flex flex-wrap justify-content-start gap-2">
+          <a href="#" class="btn btn-outline-primary">Primary</a>
+          <a href="#" class="btn btn-outline-secondary">Secondary</a>
+          <a href="#" class="btn btn-outline-success">Success</a>
+          <a href="#" class="btn btn-outline-danger">Danger</a>
+          <a href="#" class="btn btn-outline-warning">Warning</a>
+          <a href="#" class="btn btn-outline-info">Info</a>
+          <a href="#" class="btn btn-outline-light bg-dark">Light</a>
+          <a href="#" class="btn btn-outline-dark">Dark</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sizes" class="container anchor-target">
+      <div class="demo-section">
+        <p class="demo-label mb-2">Button sizes</p>
+        <h2 class="h3 fw-bold mb-3">Small, default and large sizes</h2>
+        <div class="mod-jtbootstrapbuttons d-flex flex-wrap align-items-center justify-content-start gap-2">
+          <a href="#" class="btn btn-primary btn-sm">Small</a>
+          <a href="#" class="btn btn-primary">Default</a>
+          <a href="#" class="btn btn-primary btn-lg">Large</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="links" class="container anchor-target">
+      <div class="demo-section">
+        <p class="demo-label mb-2">URL and target</p>
+        <h2 class="h3 fw-bold mb-3">Supported link types</h2>
+        <p class="text-secondary">If the URL field is empty, the module renders a <code>&lt;button&gt;</code> element. If a valid URL is provided and the button is not disabled, it renders an <code>&lt;a&gt;</code> element.</p>
+        <div class="mod-jtbootstrapbuttons d-flex flex-wrap justify-content-start gap-2 mb-4">
+          <a href="https://joomtheme.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer" title="External link" aria-label="External link">https://</a>
+          <a href="/contact" class="btn btn-secondary">Relative URL</a>
+          <a href="#output" class="btn btn-success">#anchor</a>
+          <a href="mailto:support@joomtheme.com" class="btn btn-danger">mailto:</a>
+          <a href="tel:+905551234567" class="btn btn-warning">tel:</a>
+          <button type="button" class="btn btn-info" title="Empty URL example" aria-label="Empty URL example">Empty URL</button>
+        </div>
+        <div class="alert alert-info mb-0">
+          When the new tab option is enabled, the module adds <code>target=&quot;_blank&quot;</code> and <code>rel=&quot;noopener noreferrer&quot;</code> for safer external links.
+        </div>
+      </div>
+    </section>
+
+    <section id="states" class="container anchor-target">
+      <div class="demo-section">
+        <p class="demo-label mb-2">States</p>
+        <h2 class="h3 fw-bold mb-3">Full width and disabled buttons</h2>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h3 class="h5">Full width</h3>
+            <div class="mod-jtbootstrapbuttons d-flex flex-wrap justify-content-start gap-2">
+              <a href="#" class="btn btn-primary w-100">Full width button</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="h5">Disabled state</h3>
+            <div class="mod-jtbootstrapbuttons d-flex flex-wrap justify-content-start gap-2">
+              <button type="button" class="btn btn-secondary" disabled aria-disabled="true">Disabled button</button>
+              <button type="button" class="btn btn-outline-secondary" disabled aria-disabled="true">Disabled outline</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="layout" class="container anchor-target">
+      <div class="demo-section">
+        <p class="demo-label mb-2">Alignment and gap</p>
+        <h2 class="h3 fw-bold mb-3">Alignment and button spacing</h2>
+
+        <div class="mb-4">
+          <h3 class="h6 text-secondary">Left alignment / gap-1</h3>
+          <div class="mod-jtbootstrapbuttons d-flex flex-wrap justify-content-start gap-1 p-3 border rounded">
+            <a href="#" class="btn btn-primary">Button</a>
+            <a href="#" class="btn btn-outline-primary">Button</a>
+            <a href="#" class="btn btn-secondary">Button</a>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h6 text-secondary">Center alignment / gap-3</h3>
+          <div class="mod-jtbootstrapbuttons d-flex flex-wrap justify-content-center gap-3 p-3 border rounded">
+            <a href="#" class="btn btn-success">Button</a>
+            <a href="#" class="btn btn-outline-success">Button</a>
+            <a href="#" class="btn btn-dark">Button</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="h6 text-secondary">Right alignment / gap-5</h3>
+          <div class="mod-jtbootstrapbuttons d-flex flex-wrap justify-content-end gap-5 p-3 border rounded">
+            <a href="#" class="btn btn-danger">Button</a>
+            <a href="#" class="btn btn-outline-danger">Button</a>
+            <a href="#" class="btn btn-warning">Button</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="language" class="container anchor-target">
+      <div class="demo-section">
+        <p class="demo-label mb-2">Languages and support</p>
+        <h2 class="h3 fw-bold mb-3">English / Turkish language files and support information</h2>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="feature-card">
+              <strong>English language file</strong>
+              <p class="text-secondary mb-0">en-GB language file for administrator and frontend strings.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-card">
+              <strong>Turkish language file</strong>
+              <p class="text-secondary mb-0">tr-TR translations for field labels and descriptions in the module form.</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="alert alert-primary mb-0">
+              Support: <a href="mailto:support@joomtheme.com">support@joomtheme.com</a> • <a href="https://joomtheme.com" target="_blank" rel="noopener noreferrer">joomtheme.com</a> • <a href="https://joomtheme.com/contact" target="_blank" rel="noopener noreferrer">Contact form</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="output" class="container anchor-target">
+      <div class="demo-section">
+        <p class="demo-label mb-2">Generated output</p>
+        <h2 class="h3 fw-bold mb-3">Example HTML output generated by the module</h2>
+        <pre class="code-box"><code>&lt;div class=&quot;mod-jtbootstrapbuttons d-flex flex-wrap justify-content-center gap-2&quot;&gt;
+  &lt;a href=&quot;https://joomtheme.com&quot; class=&quot;btn btn-primary&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Website&lt;/a&gt;
+  &lt;a href=&quot;/contact&quot; class=&quot;btn btn-outline-secondary btn-lg&quot;&gt;Contact&lt;/a&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;No URL Button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot; disabled aria-disabled=&quot;true&quot;&gt;Disabled&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </section>
+
+    <section id="install" class="container anchor-target pb-5">
+      <div class="demo-section">
+        <p class="demo-label mb-2">Installation</p>
+        <h2 class="h3 fw-bold mb-3">Joomla installation</h2>
+        <ol class="mb-4">
+          <li>Download the latest ZIP package from the Releases page.</li>
+          <li>In Joomla Administrator, go to <strong>System → Install → Extensions</strong>.</li>
+          <li>Upload the ZIP package.</li>
+          <li>Open <strong>JT Bootstrap Buttons</strong> under <strong>Content → Site Modules</strong>.</li>
+          <li>Add your buttons, select a module position and publish the module.</li>
+        </ol>
+        <div class="d-flex gap-2 flex-wrap">
+          <a href="https://github.com/joomtheme/mod-jtbootstrapbuttons/releases" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Latest Release</a>
+          <a href="https://github.com/joomtheme/mod-jtbootstrapbuttons/issues" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">Issues</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-top py-4 bg-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 text-secondary small">
+      <span>© 2026 JoomTheme</span>
+      <span>JT Bootstrap Buttons • Joomla 5/6 • Bootstrap 5</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
